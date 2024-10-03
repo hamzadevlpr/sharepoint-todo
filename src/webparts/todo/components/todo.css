@@ -1,0 +1,169 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --success-color: #28a745;
+  --success-hover: #218838;
+  --danger-color: #dc3545;
+  --danger-hover: #c82333;
+  --background-color: #f7f7f7;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todoApp {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.inputWrapper {
+  margin: 20px;
+}
+
+.inputWrapper input[type='text'] {
+  margin-bottom: 20px;
+  width: 75%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputWrapper input[type='text']:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.inputWrapper button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.inputWrapper button:hover {
+  background-color: var(--primary-hover);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
+ul li span {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #333;
+  flex-grow: 1;
+  text-align: left;
+  padding-right: 10px;
+}
+
+ul li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+ul li span:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+ul li button {
+  background-color: var(--success-color);
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+ul li button:hover {
+  background-color: var(--success-hover);
+}
+
+ul li button.delete {
+  background-color: var(--danger-color);
+}
+
+ul li button.delete:hover {
+  background-color: var(--danger-hover);
+}
+
+.editWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editWrapper input[type='text'] {
+  width: 60%;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.editWrapper button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.editWrapper button:hover {
+  background-color: var(--primary-hover);
+}
+
+.editWrapper button.cancel {
+  background-color: var(--danger-color);
+}
+
+.editWrapper button.cancel:hover {
+  background-color: var(--danger-hover);
+}
